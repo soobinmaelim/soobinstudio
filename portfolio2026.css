@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: black;
+}
+/* Modal Overlay Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Darkens the background */
+  backdrop-filter: blur(4px);            /* Soft blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;                         /* Forces it to stay on top of everything */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* The Popup Box */
+.modal-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-box h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.modal-box p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Close Button matching your navigation style */
+.close-modal-btn {
+  background: none;
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.close-modal-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+/* 1. Force the frame box to stay within the browser boundaries */
+.landing-hero {
+  width: 100%;
+  height: calc(100vh - 40px); /* Subtracts potential padding to prevent page scrollbars */
+  display: flex;
+  justify-content: center;   /* Centers horizontally */
+  align-items: center;       /* Centers vertically */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;          /* Keeps any stray pixels from forcing a scrollbar */
+}
+
+/* 2. Tighten restrictions on the artwork itself */
+.front-page-img {
+  height: 40vh;         /* Change this percentage to scale the image up or down */
+  width: auto;          /* Automatically keeps the image proportions perfect */
+  max-width: 80%;      /* Safety guard so it never spills into your sidebar */
+  display: block;
+  object-fit: contain;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 300px;
+  padding: 40px;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar img {
+  width: 100%;
+  max-width: 220px;
+}
+
+/* NAVIGATION */
+
+.navbar ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.navbar li {
+  margin-bottom: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.6;
+}
+
+/* GRAPHICS DROPDOWN */
+
+.submenu {
+  display: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.submenu li {
+  margin: 10px 0;
+}
+
+.submenu a {
+  font-size: 1rem;
+}
+
+/* CONTENT */
+
+.content {
+  margin-left: 320px;
+  width: calc(100% - 320px);
+  padding: 50px;
+}
+
+/* TABS */
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* GALLERY */
+
+.seamless-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.seamless-gallery img {
+  max-width: 400px;
+  height:auto;
+  
+  object-fit: cover;
+  display: block;
+}
+/* RESUME */
+
+.resume-download {
+  margin-top: 20px;
+}
+
+.resume-img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 20px;
+}
+
+/* ABOUT */
+
+.bio-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.me-img {
+  width: 250px;
+}
+
+.bio-text {
+  max-width: 600px;
+}
+
+.bio-text p {
+  line-height: 1.6;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .bio-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .seamless-gallery {
+    column-count: 1;
+  }
+}
+
+
+
+

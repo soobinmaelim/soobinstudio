@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STUDIO SOOBIN*</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="portfolio2026.css">
+</head>
+<body>
+  <!-- WELCOME POPUP MODAL -->
+<div id="welcome-modal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>WELCOME TO STUDIO SOOBIN*</h2>
+    <p>Visual Communication &amp; Graphic Design Portfolio.</p>
+    <button onclick="closeWelcomeModal()" class="close-modal-btn">.CLOSE*</button>
+  </div>
+</div>
+
+  <div class="layout">
+
+    <div class="sidebar">
+      <header>
+  <h1> 
+    <!-- Added the onclick function and an inline style to make it look clickable -->
+    <img src="../portweb/image/studiostudio_.jpg" onclick="showSection('home')" style="cursor: pointer;" alt="STUDIO SOOBIN*">
+  </h1>
+  <section class="welcome">
+  </section>
+</header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a onclick="toggleGraphics()">.GRAPHICS*</a>
+            <ul id="graphics-menu" class="submenu">
+              <li><a onclick="showSection('internship')">.INTERNSHIP*</a></li>
+              <li><a onclick="showSection('commission')">.COMMISSION*</a></li>
+              <li><a onclick="showSection('misc')">.MISC*</a></li>
+            </ul>
+          </li>
+          <li><a onclick="showSection('branding')">.BRANDING*</a></li>
+          <li><a onclick="showSection('package')">.PACKAGE*</a></li>
+          <li><a onclick="showSection('resume')">.RESUME*</a></li>
+          <li><a onclick="showSection('soobin')">.SOOBIN*</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <!-- THIS IS YOUR FRONT PAGE HERO IMAGE -->
+  <section id="home" class="tab" style="display: block;">
+    <div class="landing-hero">
+      <img src="../portweb/together.png">
+    </div>
+  </section>
+      
+      <section id="internship" class="tab">
+        <h2>.INTERNSHIP*</h2>
+        <div class="seamless-gallery">
+          <img src="graphic/graphicimage/internship/Anna_Yoon_Strawberry_SodaPop_2.png">
+          <img src="graphic/graphicimage/internship/crushedtonic-08_2.png">
+          <img src="graphic/graphicimage/internship/strawberry_milk_ad_2.png">
+          <img src="graphic/graphicimage/internship/ad1_2.png">
+          <img src="graphic/graphicimage/internship/crushedtonichoneydew-03_2.png">
+          <img src="graphic/graphicimage/internship/crushedtonichoneydew-02_2.png">
+          <img src="graphic/graphicimage/internship/social_feed_-03_2.png">
+
+        </div>
+      </section>
+
+      <section id="commission" class="tab">
+        <h2>.COMMISSION*</h2>
+        <div class="seamless-gallery">
+          <img src="graphic/graphicimage/comission/chicagocoffeecollective_2.png">
+          <img src="graphic/graphicimage/comission/cargoparty_2.png">
+          <img src="graphic/graphicimage/comission/poster_final_2.png">
+          <img src="graphic/graphicimage/comission/raphaellabirthday_2.png">
+        </div>
+      </section>
+
+      <section id="misc" class="tab">
+        <h2>.MISC*</h2>
+        <div class="seamless-gallery">
+          <img src="graphic/graphicimage/MISC/grassposter_2.png">
+          <img src="graphic/graphicimage/MISC/NAMIMATCHA_2.png">
+          <img src="graphic/graphicimage/MISC/rdinsta_2.png">
+          <img src="graphic/graphicimage/MISC/jazzpostertypefix_2.png">
+          <img src="graphic/graphicimage/MISC/sweetbean_2.png">
+           <img src="graphic/graphicimage/MISC/armageddon_2.png">
+        </div>
+      </section>
+      
+      <section id="branding" class="tab">
+        <h2>.BRANDING*</h2>
+        <div class="seamless-gallery">
+          <img src="branding/branding image/logo_2.png">
+          <img src="branding/branding image/matchaonmichigan-01.png">
+          <img src="branding/branding image/matchaonmichigan-02.png">
+          <img src="branding/branding image/matchaonmichigan-03.png">
+          <img src="branding/branding image/matchaonmichigan-04.png">
+          <img src="branding/branding image/matchaonmichigan-05.png">
+          <img src="branding/branding image/matchaonmichigan-06.png">
+          <img src="branding/branding image/kplayfest_2.png">
+          <img src="branding/branding image/kiosk1.png">
+          <img src="branding/branding image/kiosk2.png">
+          <img src="branding/branding image/kiosk3.png">
+          <img src="branding/branding image/flagbanner.png">
+          <img src="branding/p2ppt1.png">
+          <img src="branding/p2p_pt2.png">
+          <img src="branding/p2ppt3.png">
+          <img src="branding/p2ppt4.png">
+          <img src="branding/stickers.png">
+        </div>
+      </section>
+
+      <section id="package" class="tab">
+        <h2>.PACKAGE*</h2>
+        <div class="seamless-gallery">
+          <img src="package/package2.png">
+          <img src="package/package3.png">
+          <img src="package/packae1.png">
+          <img src="package/package_4.png">
+          <img src="package/package_5.png">
+          <img src="package/custom_package.png">
+        </div>
+      </section>
+
+      <section id="resume" class="tab"> 
+        <h2>.RESUME*</h2>
+        <p>.email*: <a href="mailto:soobinmaelim@gmail.com" class="email-link">soobinmaelim@gmail.com</a></p>
+        <div class="resume-download">
+          <img src="../portweb/soobin_lim.png" class="resume-img">
+          <a href="soobin_lim.png" download="soobin_lim.png" class="download-btn">
+            .DOWNLOAD RESUME*
+          </a>
+        </div>
+      </section>
+
+      <section id="soobin" class="tab"> 
+        <div class="bio-content">
+          <img class="me-img" src="../portweb/me_2.png" alt="soobin">
+          <div class="bio-text">
+            <h2>.SOOBIN_LIM*</h2>
+            <p>Hello ! My Names Soobin Lim and I'm currently a student at the School of the Art Institute in the Visual Communication Department! I'm interested in graphics that have creative design along with experimenting with Typography, I've worked along with Local Chicago businesses to help their needs and wanting to expand and connect with other designers !</p>
+          </div>
+        </div>
+      </section>
+
+    </div> </div> <script src="portfolio.js"></script>
+</body>
+</html
